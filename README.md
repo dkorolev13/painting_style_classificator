@@ -1,0 +1,1 @@
+# painting_style_classificator
