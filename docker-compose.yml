@@ -14,5 +14,6 @@ services:
     build: ./client
     container_name: telegram_bot
     command: python main.py
+    network_mode: host
     depends_on:
       - server
