@@ -16,6 +16,13 @@ def print_pred_probs(pred, k):
 async def root():
     return {"message": "Hello, my 13 best friend"}
 
+@app.get("/{file_id}")
+async def get_file_id(file_id: str):
+    return {"file_id": file_id}
+
+
+
+
 
 # @app.post("/imgs/")
 # async def root2(img: UploadFile):
