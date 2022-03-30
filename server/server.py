@@ -2,27 +2,27 @@ from fastapi import FastAPI, UploadFile
 from fastai.train import load_learner
 from fastai.vision import open_image
 from torch import topk
-#from pydantic import BaseModel
+
+# from pydantic import BaseModel
 
 app = FastAPI()
 learner = load_learner('./', 'model.pkl')
 
+
 def print_pred_probs(pred, k):
-  topk_pred = topk(pred[2], k)
-  for i in range(3):
-    print(f'{learner.data.classes[topk_pred.indices[i]]}: {100*topk_pred.values[i]:.2f}%')
+    topk_pred = topk(pred[2], k)
+    for i in range(3):
+        print(f'{learner.data.classes[topk_pred.indices[i]]}: {100 * topk_pred.values[i]:.2f}%')
+
 
 @app.get("/")
 async def root():
     return {"message": "Hello, my 13 best friend"}
 
+
 @app.get("/{file_id}")
 async def get_file_id(file_id: str):
     return {"file_id": file_id}
-
-
-
-
 
 # @app.post("/imgs/")
 # async def root2(img: UploadFile):
