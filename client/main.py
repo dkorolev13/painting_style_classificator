@@ -14,7 +14,7 @@ async def get_message(message: types.Message):
     # print(message.from_user)
     # print(message.photo[0].file_id)
 
-    resp = requests.get("http://127.0.0.1/" + str(message.photo[0].file_id) + "/")
+    resp = requests.get("http://127.0.0.1/" + message.photo[-1].file_id)
 
     await message.answer(text=resp.json())
 

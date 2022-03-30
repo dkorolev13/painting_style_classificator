@@ -78,3 +78,5 @@ Kill and Delete Containers and Images
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 docker rm -f $(docker ps -aq)        # Delete all Containers
 docker rmi -f $(docker images -q)    # Delete all Images
+
+fastai==1.0.61
