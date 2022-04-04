@@ -2,8 +2,11 @@ from aiogram import Bot, types, Dispatcher
 from aiogram.types import ContentType
 from aiogram.utils import executor
 import requests
+from config import BOT_TOKEN
 
-bot = Bot(token='5057381153:AAHPgJ3HpqDKkjrBq4CH1Me0dgClypbqYQk')
+
+
+bot = Bot(token=BOT_TOKEN)
 
 dp = Dispatcher(bot)
 
