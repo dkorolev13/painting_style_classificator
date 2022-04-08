@@ -3,3 +3,4 @@ uvicorn
 python-multipart
 aiogram
 fastai==1.0.61
+python-dotenv
