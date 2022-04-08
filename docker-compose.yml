@@ -1,6 +1,8 @@
 version: "3.9"
 services:
   server:
+    environment:
+      - TG_TOKEN=${TG_TOKEN}
     build: ./server
     container_name: fastapi
     ports:
@@ -11,6 +13,8 @@ services:
 
 
   client:
+    environment:
+      - TG_TOKEN=${TG_TOKEN}
     build: ./client
     container_name: telegram_bot
     command: python main.py
