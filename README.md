@@ -12,4 +12,5 @@ Telegram бот, который помогает определить худож
 * Собрать и запустить контейнеры <code>docker-compose up --build</code>
 
 Нейросеть написана и обучена в Google Colab с использованием fastai 1.0.61 на основании статьи https://medium.com/yottabytes/painting-style-classification-with-7-lines-of-code-6e7e81b3579
+
 Данные для обучения нейросети взяты с https://www.kaggle.com/c/painter-by-numbers/
