@@ -6,10 +6,10 @@ services:
     build: ./server
     container_name: fastapi
     ports:
-      - "80:80"
+      - "5000:5000"
     volumes:
       - ./server/:/painting_style_classificator/server/
-    command: uvicorn server:app --reload --host=0.0.0.0 --port=80
+    command: uvicorn server:app --reload --host=0.0.0.0 --port=5000
 
 
   client:
