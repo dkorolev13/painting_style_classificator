@@ -8,4 +8,4 @@ COPY . /painting_style_classificator/server
 
 RUN pip install --no-cache-dir --upgrade -r requirements.txt
 
-EXPOSE 80
+EXPOSE 5000
