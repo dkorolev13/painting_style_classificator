@@ -9,4 +9,4 @@ Telegram бот, который помогает определить худож
 * Скачать файлы с репозитория
 * Добавить токен бота, как Environment Variable в своей ОС
 * Установить Docker и docker-compose
-* Собрать и запустить контейнеры *docker-compose up --build*
+* Собрать и запустить контейнеры <code>docker-compose up --build</code>
